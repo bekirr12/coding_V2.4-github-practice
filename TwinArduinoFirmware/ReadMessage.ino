@@ -7,7 +7,6 @@ void readMessage()
 void check_Message_From_Bluetooth() {
   static String statusBuf = "";
 
-  // Only read Bluetooth when USB isn’t active
   if (_Bluetooth.available() > 0 && !flagUSB_b) {
     flagBluetooth_b = true;
 
